@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profil Pribadi Saya</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #ffd6ea, #fff5fa);
+            padding:40px;
+            color:#444;
+        }
+
+        h1{
+            text-align:center;
+            font-size:55px;
+            margin-bottom:40px;
+            font-family:'Playfair Display', serif;
+            color:#ff4fa0;
+            text-shadow:2px 2px 10px rgba(255,79,160,0.2);
+        }
+
+        table{
+            border-collapse:collapse;
+            background:white;
+            border-radius:25px;
+            overflow:hidden;
+            box-shadow:0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        td{
+            padding:30px;
+            border:1px solid #ffd2e6;
+        }
+
+        p{
+            margin-bottom:15px;
+            font-size:16px;
+            line-height:1.8;
+        }
+
+        b{
+            color:#ff4fa0;
+        }
+
+        img{
+            border-radius:50%;
+            object-fit:cover;
+            border:5px solid #ffb6d9;
+            box-shadow:0 8px 20px rgba(255,79,160,0.2);
+            transition:0.4s;
+        }
+
+        img:hover{
+            transform:scale(1.05);
+        }
+
+        h3{
+            margin-bottom:20px;
+            color:#ff4fa0;
+            font-size:24px;
+        }
+
+        ul,
+        ol{
+            margin-left:25px;
+            margin-bottom:25px;
+            line-height:2;
+        }
+
+        hr{
+            margin:25px 0;
+            border:none;
+            height:2px;
+            background:linear-gradient(to right,#ffb6d9,#ffe6f2);
+        }
+
+        /* TABEL DALAM */
+
+        table table{
+            margin-top:20px;
+            border-radius:15px;
+            overflow:hidden;
+        }
+
+        th{
+            background:#ff4fa0;
+            color:white;
+            padding:12px;
+            font-weight:500;
+        }
+
+        table table td{
+            padding:12px;
+            background:#fff9fc;
+        }
+
+        /* FORM */
+
+        form{
+            background:#fff5fa;
+            padding:25px;
+            border-radius:20px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        input{
+            padding:10px;
+            width:100%;
+            border:none;
+            border-radius:12px;
+            margin-top:8px;
+            margin-bottom:15px;
+            background:white;
+            box-shadow:0 2px 8px rgba(0,0,0,0.05);
+            font-family:'Poppins', sans-serif;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"]{
+            width:auto;
+            margin-right:8px;
+        }
+
+        button{
+            background:#ff4fa0;
+            color:white;
+            border:none;
+            padding:12px 30px;
+            border-radius:30px;
+            font-size:15px;
+            cursor:pointer;
+            transition:0.3s;
+            box-shadow:0 5px 15px rgba(255,79,160,0.3);
+        }
+
+        button:hover{
+            background:#222;
+            transform:translateY(-3px);
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width:768px){
+
+            body{
+                padding:20px;
+            }
+
+            table,
+            tr,
+            td{
+                display:block;
+                width:100%;
+            }
+
+            h1{
+                font-size:38px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>Profil Pribadi Saya</h1>
+
+<table width="100%" border="1" cellpadding="10">
+
+    <tr>
+
+        <!-- KOLOM 1 -->
+        <td width="50%" valign="top">
+
+            <p><b>Nama:</b> Salsabilla audina</p>
+            <p><b>NIM:</b> 246250002</p>
+            <p><b>Hobi:</b> Memasak</p>
+
+            <center>
+                <img src="image/dina.jpeg" width="120" height="120">
+            </center>
+
+            <br>
+
+            <table border="1" width="100%" cellpadding="5">
+                <tr>
+                    <th>Data</th>
+                    <th>Keterangan</th>
+                </tr>
+                <tr>
+                    <td>Nama</td>
+                    <td>Salsabila</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>salsa@gmail.com</td>
+                </tr>
+                </tr>
+                    <td>tanggal lahir</td>
+                    <td>24september 2005</td>
+                </tr>
+                </tr>
+                    <td>alamat</td>
+                    <td>jl rajidondo</td>
+                </tr>
+            </table>
+
+        </td>
+
+        <!-- KOLOM 2 -->
+        <td width="50%" valign="top">
+
+            <h3>Daftar Hobi</h3>
+
+            <ul>
+                <li>Memasak</li>
+                <li>Menonton</li>
+            </ul>
+
+            <ol>
+                <li>Belajar</li>
+                <li>Main HP</li>
+            </ol>
+
+            <hr>
+
+            <h3>Form Data</h3>
+
+            <form>
+                Nama: <input type="text"><br><br>
+                Email: <input type="email"><br><br>
+
+                Jenis Kelamin:<br>
+                <input type="radio" name="jk"> Laki-laki
+                <input type="radio" name="jk"> Perempuan
+
+                <br><br>
+
+                Hobi:<br>
+                <input type="checkbox"> Memasak
+                <input type="checkbox"> Menonton
+                <input type="checkbox"> Olahraga
+
+                <br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+
+        </td>
+
+    </tr>
+
+</table>
+
+</body>
+</html>
